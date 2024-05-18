@@ -4,27 +4,27 @@ public class SweetBoxTest {
         Sweet candy = new Candy("Mint Candy", 50, 70);
         Sweet chocolate = new Chocolate("Dark Chocolate", 200, 250);
 
-        //create sweet-box
+        // create sweet-box
         SweetBoxImpl sweetBox = new SweetBoxImpl();
 
-        //add sweets
+        // add sweets
         sweetBox.addSweet(marmalade);
         sweetBox.addSweet(candy);
         sweetBox.addSweet(chocolate);
 
-        //info after optimization
+        // info after optimization
         System.out.println("Before optimization:");
         sweetBox.showAllSweets();
         System.out.println("Total weight: " + sweetBox.getTotalWeight() + "g");
         System.out.println("Total price: " + sweetBox.getTotalPrice() + "rub");
 
-        //optimization weight
+        // optimization weight
         System.out.println("\nOptimizing weight to max 300g:");
         sweetBox.optimizeWeight(300);
         sweetBox.showAllSweets();
         System.out.println("Total weight after weight optimization: " + sweetBox.getTotalWeight() + "g");
 
-        //optimization cost
+        // optimization cost
         sweetBox.addSweet(marmalade);
         sweetBox.addSweet(candy);
         sweetBox.addSweet(chocolate);
@@ -34,4 +34,3 @@ public class SweetBoxTest {
         System.out.println("Total price after price optimization: " + sweetBox.getTotalPrice() + "rub");
     }
 }
-
