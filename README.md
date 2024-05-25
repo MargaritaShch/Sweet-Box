@@ -1,21 +1,22 @@
-# Коробка Сладостей
+# Box of Sweets
 
-## Описание проекта
+## Project Overview
 
-**Коробка сладостей** — это Java-приложение, предназначенное для управления коллекцией различных сладостей и формирования подарочной коробки. Приложение позволяет добавлять сладости с различными характеристиками, удалять их, вычислять общий вес и стоимость подарка, а также оптимизировать содержимое коробки по весу и цене.
+**Box of Sweets** is a Java application designed to manage a collection of various sweets and create a gift box. The application allows you to add sweets with different characteristics, remove them, calculate the total weight and cost of the gift, and optimize the contents of the box by weight and price.
 
-## Структура проекта
+## Project Structure
 
-- `Sweet`: Абстрактный класс, определяющий основные свойства и методы для всех видов сладостей.
-- `Marmalade`, `Candy`, `Chocolate`: Конкретные классы, наследующиеся от `Sweet`, каждый из которых имеет уникальные свойства.
-- `SweetBox`: Интерфейс, определяющий методы для работы с коллекцией сладостей.
-- `SweetBoxImpl`: Класс, реализующий интерфейс `SweetBox`. Этот класс управляет коллекцией сладостей и обеспечивает функциональность управления содержимым коробки.
+- `Sweet`: An abstract class that defines the main properties and methods for all types of sweets.
+- `Marmalade`, `Candy`, `Chocolate`: Concrete classes that inherit from `Sweet`, each with unique properties.
+- `SweetBox`: An interface that defines methods for working with a collection of sweets.
+- `SweetBoxImpl`: A class that implements the `SweetBox` interface. This class manages the collection of sweets and provides functionality for managing the contents of the box.
 
-## Функциональность
+## Functionality
 
-- **Добавление сладостей**: Методы для добавления новых сладостей в коробку.
-- **Удаление сладостей**: Методы для удаления сладостей по индексу или последней добавленной сладости.
-- **Отображение информации**: Вывод на консоль веса, стоимости и детального описания всех сладостей в коробке.
-- **Оптимизация содержимого**: 
-  - **Оптимизация по весу**: Удаление сладостей с наименьшим весом до достижения заданного максимального веса.
-  - **Оптимизация по цене**: Удаление сладостей с наименьшей ценой до достижения заданного максимального веса.
+- **Adding Sweets**: Methods for adding new sweets to the box.
+- **Removing Sweets**: Methods for removing sweets by index or the last added sweet.
+- **Displaying Information**: Outputs the weight, cost, and detailed description of all sweets in the box to the console.
+- **Optimizing Contents**: 
+  - **Weight Optimization**: Removes sweets with the lowest weight until the specified maximum weight is reached.
+  - **Price Optimization**: Removes sweets with the lowest price until the specified maximum weight is reached.
+
